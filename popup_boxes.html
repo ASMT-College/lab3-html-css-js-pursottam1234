@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Boxes</title>
+</head>
+<body>
+    <button onclick="deleteRow()">Delete Row?</button>
+
+    <button ondblclick="showPrompt()">Show Prompt</button>
+    <script>
+        
+        // alert popup box
+        alert('Welcome to my page!');
+        
+        // confirm popup box
+        function deleteRow(){
+            var result = confirm('Do you want to delete?');
+            if(result == true){
+                document.write('DELETED')
+            }
+        }
+
+        // prompt popup box
+        function showPrompt(){
+            var name = prompt("Enter your name: ");
+            document.write("Welcome"+" "+name);
+        }
+        </script>
+</body>
+</html>
