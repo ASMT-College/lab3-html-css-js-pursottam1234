@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_loop</title>
+  </head>
+  <body>
+    <div id="carsList"></div>
+
+    <script>
+      var myCars = [
+        {
+          name: "abc",
+          company: "maruti",
+        },
+        {
+          name: "car2",
+          company: "suzuki",
+        },
+      ];
+      var myTable = `
+      <table>
+      <tr>
+        <td>Name:</td>
+        <td>Company:</td>
+      </tr>
+      <tr>
+        <td>abc</td>
+        <td>maruti</td>
+      </tr>
+      <tr>
+        <td>car2</td>
+        <td>suzuki</td>
+      </tr>
+    </table>`;
+
+      myCars.forEach((car) => {});
+      document.getElementById("carsList").innerHTML = myTable;
+    </script>
+  </body>
+</html>
