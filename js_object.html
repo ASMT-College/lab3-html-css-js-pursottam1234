@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // create direct instance of an object...
+      var ram = {
+        name: "ram",
+        age: 25,
+        address: "sitapaila",
+        showDetail: showname,
+      };
+      ram.showDetail();
+
+      // create an object constructor...
+      function Person(n, a, ad) {
+        this.name = n;
+        this.age = a;
+        this.address = ad;
+        this.showDetail = showname;
+      }
+      var hari = new Person("hari", 25, "sitapaila");
+      hari.showDetail();
+      function showname() {
+        document.write("Name is: " + this.name + "</br>");
+      }
+    </script>
+  </body>
+</html>
