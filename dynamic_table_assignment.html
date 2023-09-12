@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamic Table</h1>
+    <div id="dynamic_table"></div>
+    <script>
+        var data = [{name:"john", age:20, email:"abc@gmail.com"},];
+        var myDiv = document.getElementById('dynamic_table');
+        var myTable = document.createElement('table');
+        var myTableHeading = document.createElement('tr');
+
+        var myHeadingRow1 = document.createElement('th');
+        myHeadingRow1.innerHTML = "Name";
+
+        var myHeadingRow2 = document.createElement('th');
+        myHeadingRow2.innerHTML = "Age";
+
+        var myHeadingRow3 = document.createElement('th');
+        myHeadingRow3.innerHTML = "Email";
+
+        var myTableDesc = document.createElement('tr');
+        var myDescRow1 = document.createElement('td');
+        myDescRow1.innerHTML = "John";
+
+        var myDescRow2 = document.createElement('td');
+        myDescRow2.innerHTML = 20;
+
+        var myDescRow3 = document.createElement('td');
+        myDescRow3.innerHTML = "abc@gmail.com";
+
+        myTableHeading.appendChild(myHeadingRow1);
+        myTableHeading.appendChild(myHeadingRow2);
+        myTableHeading.appendChild(myHeadingRow3);
+        myTableDesc.appendChild(myDescRow1);
+        myTableDesc.appendChild(myDescRow2);
+        myTableDesc.appendChild(myDescRow3);
+
+        myTable.appendChild(myTableHeading);
+        myTable.appendChild(myTableDesc);
+        myDiv.appendChild(myTable);
+        </script>
+</body>
+</html>
