@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#myDiv").hide();
+            $("#myDiv").click( function (){
+                alert("Hattoo Jaldi waha se Hattoo");
+            });
+
+            $("#myDiv").on("mouseover", function (){
+                $('body').css("background-color", "green");
+            });
+            $("#myDiv").on("mouseleave", function (){
+                $('body').css("background-color", "white");
+            });
+
+            
+        });
+    </script>
+</head>
+<body>
+    <div id="myDiv">Purushottam</div>
+    <div onclick="$('#myDiv').show()">Show</div>
+    <!-- <div onclick="$('#myDiv').hide()">Hide</div> -->
+    <div onclick="hideMyDiv()">Hide</div>
+    <script>
+        function hideMyDiv(){
+            $('#myDiv').hide();
+        }
+    </script>
+</body>
+</html>
